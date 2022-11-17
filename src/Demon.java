@@ -58,20 +58,30 @@ public class Demon {
     }
 
     public void SelectMision(){
-        double opt=0;
+        int opt=0;
         Scanner read=new Scanner(System.in);
+        System.out.println("Select your mission: ");
+        System.out.println("1) Kill the Shadow Demon. ");
+        System.out.println("2) Kill the Spider Demon. ");
+        System.out.println("3) Kill the Ogre Demon. ");
+        String v="";
         do {
-            System.out.println("Select your mission: ");
-            System.out.println("1) Kill the Shadow Demon. ");
-            System.out.println("2) Kill the Spider Demon. ");
-            System.out.println("3) Kill the Ogre Demon. ");
-            opt=read.nextDouble();
-            CreateDemon(opt);
+            v=read.nextLine();
+            if(Validation.validate(v)){
+                opt = Integer.parseInt(v);
+
+                //opt=read.nextDouble();
+                CreateDemon(opt);
+            }else{
+                SelectMision();
+            }
+
+
         }while (band);
     }
 
-    public void CreateDemon(double val){
-        switch ((int)val){
+    public void CreateDemon(int val){
+        switch (val){
             case 1:
                 vel=110;
                 streng=70;
