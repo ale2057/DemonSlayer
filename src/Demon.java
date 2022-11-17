@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
 public class Demon {
-    double atq=0;
-    double def=0;
-    double vel=0;
-    double streng=0;
-    String name=" ";
+    private double atq=0;
+    private double def=0;
+    private double vel=0;
+    private double streng=0;
+    private String name=" ";
 
-    boolean band=true;
+    private boolean band=true;
 
     public void setDef(double aef) {
         this.def = def;
@@ -19,6 +19,10 @@ public class Demon {
 
     public void setAtq(double atq) {
         this.atq = atq;
+    }
+
+    public double getAtq() {
+        return atq;
     }
 
     public void setName(String name) {

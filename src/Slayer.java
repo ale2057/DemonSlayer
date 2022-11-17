@@ -16,26 +16,34 @@ public class Slayer {
 
     public void choiceBreathing(){
         System.out.println("What breathing do you want to learn?");
-        System.out.println("1: water breath");
-        System.out.println("2: fire breath");
-        System.out.println("3: lightning breath");
+        System.out.println("1: Water breath     2: Fire breath      3: Lightning breath");
+        System.out.println("    Atk = 65            Atk = 85            Atk = 70");
+        System.out.println("    Def = 80            Def = 60            Def = 50");
+        System.out.println("    Vel = 70            Vel = 75            Vel = 90");
+        System.out.println("    Str = 45            Str = 85            Str = 30");
         Scanner breath= new Scanner(System.in);
         opt = breath.nextInt();
         if (opt>=1 && opt <=3){
             switch (opt){
                 case 1:
+                    Banners.Water();
+                    System.out.println("Congratulations!!! You selected the breath of water");
                     atq=65 ;
                     def=80;
                     vel=70;
                     streng=45;
                     break;
                 case 2:
+                    Banners.Fire();
+                    System.out.println("Congratulations!!! You selected the breath of fire");
                     atq=85 ;
                     def=60;
                     vel=75;
                     streng=85;
                     break;
                 case 3:
+                    Banners.Lightning();
+                    System.out.println("Congratulations!!! You selected the breath of lightning");
                     atq=70;
                     def=50;
                     vel=90;
@@ -44,6 +52,7 @@ public class Slayer {
             }
         }else{
             System.out.println("Pick a option correct, try again");
+            choiceBreathing();
         }
     }
 
@@ -62,19 +71,24 @@ public class Slayer {
             switch (opt){
                 case 1:
                     atq+=inc ;
+                    System.out.println("You gained "+inc+" additional points, your total ATK points are:"+atq);
                     break;
                 case 2:
                     def+=inc;
+                    System.out.println("You gained "+inc+" additional points, your total DEF points are:"+def);
                     break;
                 case 3:
                     vel+=inc;
+                    System.out.println("You gained "+inc+" additional points, your total VEL points are:"+vel);
                     break;
                 case 4:
                     streng+=inc;
+                    System.out.println("You gained "+inc+" additional points, your total STR points are:"+streng);
                     break;
             }
         }else{
             System.out.println("Pick a option correct, try again");
+            train();
         }
     }
 

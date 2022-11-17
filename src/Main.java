@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        DemonSlayer demonSlayer= new DemonSlayer();
+        System.out.println("WELCOME TO DEMON SLAYER");
+        demonSlayer.CombatFlow();
     }
 }
