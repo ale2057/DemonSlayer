@@ -55,7 +55,6 @@ public class Demon {
 
     public void SelectMision(){
         double opt=0;
-        boolean cont=true;
         Scanner read=new Scanner(System.in);
         do {
             System.out.println("Select your mission: ");
@@ -63,30 +62,34 @@ public class Demon {
             System.out.println("2) Kill the Spider Demon. ");
             System.out.println("3) Kill the Ogre Demon. ");
             opt=read.nextDouble();
-        }while (isBand());
+            CreateDemon(opt);
+        }while (band);
     }
 
     public void CreateDemon(double val){
         switch ((int)val){
             case 1:
-                setVel(110);
-                setStreng(70);
-                setName("Shadow Demon");
+                vel=110;
+                streng=70;
+                name="Shadow Demon";
+                band=false;
                 break;
             case 2:
-                setDef(100);
-                setStreng(50);
-                setAtq(80);
-                setName("Spider Demon");
+                def=100;
+                streng=50;
+                atq=80;
+                name="Spider Demon";
+                band=false;
                 break;
             case 3:
-                setVel(40);
-                setAtq(90);
-                setStreng(110);
-                setName("Ogre Demon");
+                vel=40;
+                atq=90;
+                streng=110;
+                name="Ogre Demon";
+                band=false;
                 break;
             default:
-                setBand(false);
+                band=true;
                 break;
         }
     }
