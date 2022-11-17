@@ -22,36 +22,41 @@ public class Slayer {
         System.out.println("    Vel = 70            Vel = 75            Vel = 90");
         System.out.println("    Str = 45            Str = 85            Str = 30");
         Scanner breath= new Scanner(System.in);
-        opt = breath.nextInt();
-        if (opt>=1 && opt <=3){
-            switch (opt){
-                case 1:
-                    Banners.Water();
-                    System.out.println("Congratulations!!! You selected the breath of water");
-                    atq=65 ;
-                    def=80;
-                    vel=70;
-                    streng=45;
-                    break;
-                case 2:
-                    Banners.Fire();
-                    System.out.println("Congratulations!!! You selected the breath of fire");
-                    atq=85 ;
-                    def=60;
-                    vel=75;
-                    streng=85;
-                    break;
-                case 3:
-                    Banners.Lightning();
-                    System.out.println("Congratulations!!! You selected the breath of lightning");
-                    atq=70;
-                    def=50;
-                    vel=90;
-                    streng=30;
-                    break;
+        String v=breath.nextLine();
+        if(Validation.validate(v)){
+            opt = Integer.parseInt(v);
+            if (opt>=1 && opt <=3){
+                switch (opt){
+                    case 1:
+                        Banners.Water();
+                        System.out.println("Congratulations!!! You selected the breath of water");
+                        atq=65 ;
+                        def=80;
+                        vel=70;
+                        streng=45;
+                        break;
+                    case 2:
+                        Banners.Fire();
+                        System.out.println("Congratulations!!! You selected the breath of fire");
+                        atq=85 ;
+                        def=60;
+                        vel=75;
+                        streng=85;
+                        break;
+                    case 3:
+                        Banners.Lightning();
+                        System.out.println("Congratulations!!! You selected the breath of lightning");
+                        atq=70;
+                        def=50;
+                        vel=90;
+                        streng=30;
+                        break;
+                }
+            }else{
+                choiceBreathing();
+                System.out.println("Pick a option correct, try again");
             }
         }else{
-            System.out.println("Pick a option correct, try again");
             choiceBreathing();
         }
     }
@@ -64,32 +69,37 @@ public class Slayer {
         System.out.println("3: Speed skill");
         System.out.println("4: Strength skill");
         Scanner skill= new Scanner(System.in);
-        opt = skill.nextInt();
-
-        if (opt>=1 && opt <=4){
-            inc = Dice.DiceFunction(max);
-            switch (opt){
-                case 1:
-                    atq+=inc ;
-                    System.out.println("You gained "+inc+" additional points, your total ATK points are:"+atq);
-                    break;
-                case 2:
-                    def+=inc;
-                    System.out.println("You gained "+inc+" additional points, your total DEF points are:"+def);
-                    break;
-                case 3:
-                    vel+=inc;
-                    System.out.println("You gained "+inc+" additional points, your total VEL points are:"+vel);
-                    break;
-                case 4:
-                    streng+=inc;
-                    System.out.println("You gained "+inc+" additional points, your total STR points are:"+streng);
-                    break;
+        String v=skill.nextLine();
+        if(Validation.validate(v)){
+            opt = Integer.parseInt(v);
+            if (opt>=1 && opt <=4){
+                inc = Dice.DiceFunction(max);
+                switch (opt){
+                    case 1:
+                        atq+=inc ;
+                        System.out.println("You gained "+inc+" additional points, your total ATK points are:"+atq);
+                        break;
+                    case 2:
+                        def+=inc;
+                        System.out.println("You gained "+inc+" additional points, your total DEF points are:"+def);
+                        break;
+                    case 3:
+                        vel+=inc;
+                        System.out.println("You gained "+inc+" additional points, your total VEL points are:"+vel);
+                        break;
+                    case 4:
+                        streng+=inc;
+                        System.out.println("You gained "+inc+" additional points, your total STR points are:"+streng);
+                        break;
+                }
+            }else{
+                System.out.println("Pick a option correct, try again");
+                train();
             }
         }else{
-            System.out.println("Pick a option correct, try again");
             train();
         }
+
     }
 
     public double getAtq() {
