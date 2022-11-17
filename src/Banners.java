@@ -221,4 +221,55 @@ public class Banners {
                 "                                      .                                                             \n" +
                 "                                                                                                    \n");
     }
+
+    static void ShadowDemon(){
+        System.out.println("                                                            \n" +
+                "              .,.                          .,.              \n" +
+                "            .;x0;                          ;0x:.            \n" +
+                "          .cloKx.                          .xKolc.          \n" +
+                "         ;d:;OWo                            lWO;:d;         \n" +
+                "        lk,.xWNc                            :NWx.,kl        \n" +
+                "       lO; cXWX:                            :XWXc ;Ol       \n" +
+                "      ,0o .kWWNc                            cNWWk. l0,      \n" +
+                "      o0, ;KWNWd.    ...','.    .','...    .dWNWX; 'Oo      \n" +
+                "     .kk. cNWNWXxcldk0KXNNNKl..lKNNNXK0kdlcxXWNWNc .kx.     \n" +
+                "     .kk. cNWNNWWWWWWNKxldXNo,'oXXxoxKNWWWWWWWWWNc .kk.     \n" +
+                "     .x0' :XWWWWWNWWKl.  l0l    l0l. .lKNWWNWWNWX: '0x.     \n" +
+                "      lXl '0WNWNNWNx'   ;Kk.    .xX;   'xXNNWWNW0' cXo      \n" +
+                "      ,K0' lNWWWXk::;   ,Ko      oK,   ;::kXNWWNo '0K;      \n" +
+                "      .xWk..:olc'.c0c .. oo      oo .. c0c.':loc..kWx.      \n" +
+                "     .oKWNk' ..;o0Xd..c. 'o.    .l, .c'.oX0o;.. 'kNWKo.     \n" +
+                "    ;0WWWWNKO0XNXk;.'d:  .c,    'c.  ;d'.;xKNX0OKNNNWN0;    \n" +
+                "   ;KWWWXOkkdol;'.,ld;   .;.    .,.   ;dl,.';lodxkOXWWWK;   \n" +
+                "  .kWWXo'...',;;;:c,.                  .,c:;,;,'...'oKWWk.  \n" +
+                "  'OWK:   ....      .';:'          'c;'.      ....   :KW0'  \n" +
+                "  .kWd.   ..          .oKl.      .lKo.          ..   .dWk.  \n" +
+                "  .c0c  .,:ldl'        ,KK,      ,KK,        'ldl:,.  :0c.  \n" +
+                " c0dl'  ..  .lkxl,.. .'xN0'      'ONx'. ..,lxkl.   .  'cd0c \n" +
+                " lNNk.   ...  .:xKK0O0XNO;  .,,.  ,ONX0O0KKx:.  ...   .xNNl \n" +
+                " .clko. .. ;c.   .;lllc,.  .dXXd.  .,cllc;.   .c; ..  oklc. \n" +
+                "  lklc' .. .lOd;.        .cO0xx0Oc.        .;oOl. '. .clko. \n" +
+                "  ;0Ko. ,;...cK0lcccclloxKW0,  ,0WKxollcllllOKc...;, .o00;  \n" +
+                "  .ldo' 'o',;.;xo,'',,;,';k0,  ,0k;',;;,,',ox;.;,'o' 'oxl.  \n" +
+                "  ;XWO; .ol.c; .okdc:c:. .:d,  ,d:. .:c:cdko. ;c.lo. ;ONX;  \n" +
+                "  ;X0;   .dc,o;  .;cc;. .,ol.  .lo,. .;cc:.  ;o;cd.   ,0X;  \n" +
+                "  .xo .;,..;cld:.    .,,:co;    ;ol:,,.    .:olc:..,;. ok.  \n" +
+                "   ;l.,o'   .';cc'  .;,  'l'    'l'  ,;.  'cc;'.   'd;.o:   \n" +
+                "    ;''l. .c:.  ....,;.  .c;    ;c.  .;,....  .:c' .l',:    \n" +
+                "    ...c:  'dl.     .,;coodl.  .cdooc;,.     .ld'  :c...    \n" +
+                "       ,o'  'kOc.     ...,xKOkkOKx,...     .cOO'  'o,       \n" +
+                "        co.  'OWKxc,.     ,lcllcl,     .,cxKNO'  .oc        \n" +
+                "        .ol.  .kNWXllkxolc:;'..';ccloxkolKWNk'  .lo.        \n" +
+                "         .dc   .dKl;OKocxOkxkkkkxkOxlo0O;lKx.   cd.         \n" +
+                "          'xc  .;:l0Wk'.:l' .;;'.'l:.'xN0l:;.  cx'          \n" +
+                "           ,kl';ckX0O0l';oc.;ll;.co;'l0O0Xkc;,lk;           \n" +
+                "       ..',;oxdOKk:.'ldddddcloolcddoddl'.:kKkdxo;,'..       \n" +
+                "       .';:cldKO,     .:loxkkOOkkxol:.     ,OKdlc:;'.       \n" +
+                "              ,ko.     'lc,'....',cl'     .lk,              \n" +
+                "               .xx.     .lxOOOOOkxl.     .xx'               \n" +
+                "                .dO:       ..''..       :kd.                \n" +
+                "                  :Ok:'. ..,cooc,.. .':kO:                  \n" +
+                "                   .o0K0O000dccd000O0K0o.     .      .      \n" +
+                "                     .cdkxc'    'cdkdc.       ..............\n");
+    }
 }
